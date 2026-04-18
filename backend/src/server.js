@@ -13,11 +13,11 @@ const PORT = process.env.PORT;
 
 const __dirname = path.resolve();
 
-// app.use(cors({
-//     origin: "https://streamify-frontend-0fom.onrender.com",
-//     credentials: true,
-// }));
-app.use(cors());
+app.use(cors({
+    origin: "https://streamify-platform-frontend.onrender.com",
+    credentials: true,
+}));
+// app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
